@@ -10,95 +10,136 @@
   <body>
     <header>
       <h1 id="title">Testando API</h1>
-      <section id="tabs">
-        <div class="tabDiv" id="jurados">
-          <a class="linkTab" id="linkJurados" href=""> Jurados</a>
-        </div>
-        <div class="tabDiv" id="escolas">
-          <a class="linkTab" id="linkEscolas" href=""> Escolas</a>
-        </div>
-        <div class="tabDiv" id="mapa">
-          <a class="linkTab" id="linkMapa" href=""> Mapa</a>
-        </div>
-        <div class="tabDiv" id="construcoes">
-          <a class="linkTab" id="linkConstrusoes" href=""> Construções</a>
-        </div>
-      </section>
     </header>
 
-    <section id="info">
-      <section id="infoJurados" class="secInfo">
-        <div id="glossaryJurados">
-          <article id="artJurados">
-            <h3 id="titleGlossaryJurados" class="titleGlossary">
-              Glossário Jurados:
-            </h3>
-            <p id="textGlossaryJurados" class="textGlossary">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil,
-              iusto iste. Excepturi eaque, autem ut eveniet delectus quos modi
-              quidem asperiores provident. Totam nostrum magnam corrupti
-              repellendus voluptatibus dolor tempore!
-            </p>
-          </article>
+    <section id="screen">
+      <section id="tabs">
+        <div class="tabDiv" id="jurados">
+          <a class="linkTab" id="linkJurados" href="#infoJurados"> Jurados</a>
         </div>
-        <div class="infoCard" id="infoCardJurados">
-          <h4 id="titleInfoCardJurados">Jurados:</h4>
+        <div class="tabDiv" id="escolas">
+          <a class="linkTab" id="linkEscolas" href="#infoEscolas"> Escolas</a>
         </div>
-      </section>
-      <section id="infoEscolas" class="secInfo">
-        <div id="glossaryEscolas">
-          <article id="artEscolas">
-            <h3 id="titleGlossaryEscolas" class="titleGlossary">
-              Glossário Escolas de Samba:
-            </h3>
-            <p id="textGlossaryEscolas" class="textGlossary">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil,
-              iusto iste. Excepturi eaque, autem ut eveniet delectus quos modi
-              quidem asperiores provident. Totam nostrum magnam corrupti
-              repellendus voluptatibus dolor tempore!
-            </p>
-          </article>
+        <div class="tabDiv" id="mapa">
+          <a class="linkTab" id="linkMapa" href="#infoMapa"> Mapa</a>
         </div>
-        <div class="infoCard" id="infoCardEscolas">
-          <h4 id="titleinfoCardEscolas">Escolas de Samba:</h4>
+        <div class="tabDiv" id="construcoes">
+          <a class="linkTab" id="linkConstrusoes" href="#infoConstrucoes">
+            Construções</a
+          >
+        </div>
+         <div class="tabDiv" id="componentes">
+          <a class="linkTab" id="linkComponentes" href="#infoComponentes">
+            Componentes</a
+          >
         </div>
       </section>
-      <section id="infoMapa" class="secInfo">
-        <div id="glossaryMapa">
-          <article id="artMapa">
-            <h3 id="titleGlossaryMapa" class="titleGlossary">
-              Glossário Mapa:
-            </h3>
-            <p id="textGlossaryMapa" class="textGlossary">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil,
-              iusto iste. Excepturi eaque, autem ut eveniet delectus quos modi
-              quidem asperiores provident. Totam nostrum magnam corrupti
-              repellendus voluptatibus dolor tempore!
-            </p>
-          </article>
-        </div>
-        <div class="infoCard" id="infoCardMapa">
-          <h4 id="titleInfoCardMapa">Mapa:</h4>
-        </div>
-      </section>
-      <section id="infoConstrucoes" class="secInfo">
-        <div id="glossaryConstrucoes">
-          <article id="artConstrucoes">
-            <h3 id="titleGlossaryconstrucoes" class="titleGlossary">
-              Glossário Construções:
-            </h3>
-            <p id="textGlossaryConstrucoes" class="textGlossary">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil,
-              iusto iste. Excepturi eaque, autem ut eveniet delectus quos modi
-              quidem asperiores provident. Totam nostrum magnam corrupti
-              repellendus voluptatibus dolor tempore!
-            </p>
-          </article>
-        </div>
-        <div class="infoCard" id="infoCardConstrucoes">
-          <h4 id="titleInfoCardConstrucoes">Construções:</h4>
-        </div>
+
+      <section id="info">
+        <section id="infoJurados" class="secInfo">
+          <div id="glossaryJurados" class="glossary">
+            <article id="artJurados">
+              <h3 id="titleGlossaryJurados" class="titleGlossary">
+                Glossário Jurados:
+              </h3>
+              <p id="textGlossaryJurados" class="textGlossary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil,
+                iusto iste. Excepturi eaque, autem ut eveniet delectus quos modi
+                quidem asperiores provident. Totam nostrum magnam corrupti
+                repellendus voluptatibus dolor tempore!
+              </p>
+            </article>
+          </div>
+          <div class="infoCard" id="infoCardJurados">
+            <h4 id="titleInfoCardJurados">Jurados:</h4>
+            <div class="infoCardContent" id="infoCardContentJurados"></div>
+            <button class="btnInfoCard" id="btnInfoCardJurados">Gerar</button>
+          </div>
+        </section>
+        <section id="infoEscolas" class="secInfo">
+          <div id="glossaryEscolas" class="glossary">
+            <article id="artEscolas">
+              <h3 id="titleGlossaryEscolas" class="titleGlossary">
+                Glossário Escolas de Samba:
+              </h3>
+              <p id="textGlossaryEscolas" class="textGlossary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil,
+                iusto iste. Excepturi eaque, autem ut eveniet delectus quos modi
+                quidem asperiores provident. Totam nostrum magnam corrupti
+                repellendus voluptatibus dolor tempore!
+              </p>
+            </article>
+          </div>
+          <div class="infoCard" id="infoCardEscolas">
+            <h4 id="titleinfoCardEscolas">Escolas de Samba:</h4>
+            <div class="infoCardContent" id="infoCardContentEscolas"></div>
+            <button class="btnInfoCard" id="btnInfoCardEscolas">Gerar</button>
+          </div>
+        </section>
+        <section id="infoMapa" class="secInfo">
+          <div id="glossaryMapa" class="glossary">
+            <article id="artMapa">
+              <h3 id="titleGlossaryMapa" class="titleGlossary">
+                Glossário Mapa:
+              </h3>
+              <p id="textGlossaryMapa" class="textGlossary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil,
+                iusto iste. Excepturi eaque, autem ut eveniet delectus quos modi
+                quidem asperiores provident. Totam nostrum magnam corrupti
+                repellendus voluptatibus dolor tempore!
+              </p>
+            </article>
+          </div>
+          <div class="infoCard" id="infoCardMapa">
+            <h4 id="titleInfoCardMapa">Mapa:</h4>
+            <div class="infoCardContent" id="infoCardContentMapa"></div>
+            <button class="btnInfoCard" id="btnInfoCardMapa">Gerar</button>
+          </div>
+        </section>
+        <section id="infoConstrucoes" class="secInfo">
+          <div id="glossaryConstrucoes" class="glossary">
+            <article id="artConstrucoes">
+              <h3 id="titleGlossaryconstrucoes" class="titleGlossary">
+                Glossário Construções:
+              </h3>
+              <p id="textGlossaryConstrucoes" class="textGlossary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil,
+                iusto iste. Excepturi eaque, autem ut eveniet delectus quos modi
+                quidem asperiores provident. Totam nostrum magnam corrupti
+                repellendus voluptatibus dolor tempore!
+              </p>
+            </article>
+          </div>
+          <div class="infoCard" id="infoCardConstrucoes">
+            <h4 id="titleInfoCardConstrucoes">Construções:</h4>
+            <div class="infoCardContent" id="infocardContentConstrucoes"></div>
+            <button class="btnInfoCard" id="btnInfoCardConstrucoes">Gerar</button>
+          </div>
+        </section>
+          <section id="infoComponentes" class="secInfo">
+          <div id="glossaryComponentes" class="glossary">
+            <article id="artComponentes">
+              <h3 id="titleGlossaryComponentes" class="titleGlossary">
+                Glossário Componentes:
+              </h3>
+              <p id="textGlossaryComponentes" class="textGlossary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil,
+                iusto iste. Excepturi eaque, autem ut eveniet delectus quos modi
+                quidem asperiores provident. Totam nostrum magnam corrupti
+                repellendus voluptatibus dolor tempore!
+              </p>
+            </article>
+          </div>
+          <div class="infoCard" id="infoCardComponentes">
+            <h4 id="titleInfoCardComponentes">Componentes:</h4>
+            <div class="infoCardContent" id="infocardContentComponentes"></div>
+            <button class="btnInfoCard" id="btnInfoCardComponentes">Gerar</button>
+          </div>
+        </section>
       </section>
     </section>
+    <script src="/src/scripts/data.js"></script>
+    <script src= "/src/scripts/script.js"></script>
+    
   </body>
 </html>

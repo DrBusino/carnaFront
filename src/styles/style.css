@@ -1,7 +1,78 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(92, 29, 0);
+}
+
+header h1 {
+  padding: 1rem;
+  color: black;
+  align-self: center;
+}
+
+section#screen{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+section#screen section#tabs {
+  
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+top: 0;
+  position: sticky;
+  padding: 1rem;
+}
+
+section#screen section#tabs div.tabDiv a.linkTab {
+  text-decoration: none;
+  color: black;
+}
+
+section#screen section#info {
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+  color: black;
+  margin: 1%;
+}
+
+section#screen section#info section.secInfo {
+  display: flex;
+  margin: 1rem;
+  background-color: rgb(255, 255, 255);
+}
+
+section#screen section#info section.secInfo div.glossary {
+  display: flex;
+  flex-direction: column;
+  
+  margin: 3rem;
+}
+
+section#screen section#info section.secInfo div.infoCard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 1rem 5rem;
+  width: 30vw;
+  height: 20rem;
+  background-color: aqua;
 }
 
 
+section#screen section#info section.secInfo div.infoCard button.btnInfoCard{
+  
+  
+}
